@@ -16,7 +16,7 @@ services:
   sql:
     image: "postgres"
     ports:
-       - "5050"
+       - "5432:5432"
     volumes:
       - ./data/dbdata:/var/lib/postgresql/data
     networks:
